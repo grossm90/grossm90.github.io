@@ -45,3 +45,204 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/*
+==========================================================================
+Custom styles
+==========================================================================
+*/
+
+body {
+    background-color: #009b77;
+    color: #fff;
+    font: 400 16px/22px "Libre Baskerville", Garamond, serif;
+}
+
+/*
+================================================================================
+Grid
+
+border-box combines all the box measurements when using "width" and "height, 
+making it eaiser to calculate their size.
+================================================================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container,
+.grid {
+    margin: 0 auto;
+    width: 960px;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+.col-1-3 {
+    width: 33.33%;
+}
+.col-2-3 {
+    width: 66.66%;
+}
+
+/*
+================================================================================
+Clearfix
+================================================================================
+*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*
+================================================================================
+Typography
+================================================================================
+*/
+
+h1, h2, h3, h4 {
+    color: #367e6a;
+}
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
+}
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+strong {
+    font-weight: 400;
+}
+cite,
+em {
+    font-style: italic;
+}
+
+/*
+==========================================================================
+Links
+==========================================================================
+*/
+
+a {
+    color: #F09600;
+    text-decoration: none;
+}
+a:hover {
+    color: #915c00;
+}
+p a {
+    border-bottom: 1px solid #F09600;
+}
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+    color: #333;
+}
+
+
+/*
+==========================================================================
+Primary header
+==========================================================================
+*/
+
+.logo {
+    border-top: 4px solid #F09600;
+    float: left;
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 44px;
+    padding: 40px 0 22px 0;
+    text-transform: uppercase;
+}
+.tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
+    color: #fff;
+}
+
+/*
+==========================================================================
+Navigation bar
+==========================================================================
+*/
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 14px 20px;
+    text-align: left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 30px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar li {   
+        flex-direction: column;
+    }
+}
