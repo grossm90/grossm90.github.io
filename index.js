@@ -4,22 +4,28 @@ const express = require('express');
 
 const app = new express;
 
+const pug = require('pug');
+
 app.use(express.static('public'));
 
+app.set('view engine', 'pug');
+
+app.set('views', __dirname + '/views');
+
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+    res.render('index');
 });
 
 app.get('/resume', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/resume.html'));
+    res.render('resume');
 });
 
 app.get('/projects', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/projects.html'));
+    res.render('projects');
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/contact.html'));
+    res.render('contact');
 });
 
 app.listen(4000, () => {
