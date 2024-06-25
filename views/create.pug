@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+
+head
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+    title Matthew L. Gross
+
+    include includes/css.pug
+
+body
+    include includes/header.pug
+
+    section
+        h1 Create Post
+            .container
+                form(action="/posts/store", method="POST")
+                    label Title
+                    input(type='text', name='title', placeholder='Title')
+
+                    label Description
+                    input(type='text', name='description', placeholder='Description')
+
+                    label Content
+                    textarea(name='content', placeholder='Content...', cols='30', rows='10')
+
+    include includes/footer.pug
