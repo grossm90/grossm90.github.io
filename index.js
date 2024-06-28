@@ -59,7 +59,7 @@ app.get('/posts/new', (req, res) => {
 app.post('/posts/store', (req, res) => {
     Post.create(req.body)
         .then(() => {
-            res.redirect('/');
+            res.redirect('/posts');
         })
         .catch((error) => {
             console.log(error);
