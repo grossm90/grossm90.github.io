@@ -9,12 +9,12 @@ html(lang='en')
         title Matthew L. Gross
 
         include includes/css.pug
-    body
-        include includes/header.pug
-        section.row
-            .grid
-                ul
-                    each post in posts
-                        li= post.title
 
-include includes/footer.pug
+body
+    include includes/header.pug
+    section.row
+        div.grid
+            h1 #{post.title}
+            h2 #{post.description}
+            p #{post.content}
+    include includes/footer.pug

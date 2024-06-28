@@ -13,17 +13,20 @@ head
 body
     include includes/header.pug
 
-    section
-        h1 Create Post
-            .container
-                form(action="/posts/store", method="POST")
-                    label Title
-                    input(type='text', name='title', placeholder='Title')
+    section.row
+        div.grid
+            h1 Create Post
+                .container
+                    form(action="/posts/store", method="POST")
+                        label Title
+                        input(type='text', name='title', placeholder='Title')
 
-                    label Description
-                    input(type='text', name='description', placeholder='Description')
+                        label Description
+                        input(type='text', name='description', placeholder='Description')
 
-                    label Content
-                    textarea(name='content', placeholder='Content...', cols='30', rows='10')
+                        label Content
+                        textarea(name='content', placeholder='Content...', cols='30', rows='10')
+
+                        button Create Post
 
     include includes/footer.pug
