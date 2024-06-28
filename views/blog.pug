@@ -16,6 +16,6 @@ html(lang='en')
                 ul
                     each post in posts
                         li 
-                            a(href='/post/' + post.id) #{post.title}
+                            a(href='/post/' + post.id) #{post.title} #{post.createdAt.toDateString()}
 
 include includes/footer.pug
