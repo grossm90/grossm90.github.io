@@ -206,15 +206,6 @@ a:hover {
 p a {
     border-bottom: 1px solid #F09600;
 }
-.primary-header a,
-.primary-footer a {
-    color: white;
-}
-.primary-header a:hover,
-.primary-footer a:hover {
-    color: #333;
-}
-
 
 /*
 ==========================================================================
@@ -222,21 +213,22 @@ Primary header
 ==========================================================================
 */
 
-.logo {
+header > h1 {
     border-top: 4px solid #F09600;
     float: left;
+    width: fit-content;
     font-size: 48px;
     font-weight: 100;
     letter-spacing: .5px;
     line-height: 44px;
-    padding: 40px 0 22px 0;
+    padding: 20px 0 0 0;
     text-transform: uppercase;
 }
-.tagline {
-    margin: 66px 0 22px 0;
+
+header > h2 {
     text-align: right;
     color: white;
-    padding-bottom: 10px;
+    padding: 40px 0 20px 0;
 }
 
 /*
@@ -245,11 +237,12 @@ Navigation bar
 ==========================================================================
 */
 
-.navbar {
-    text-align: right;
+nav {
+    display: flex;
+    justify-content: right;
 }
 
-.navbar a {
+nav > a {
     font-size: 12px;
     color: white;
     text-decoration: none;
@@ -257,22 +250,13 @@ Navigation bar
     padding: 14px 30px;
 }
 
-a.active {
+nav > a.active {
     background-color: #F09600;
 }
 
-.navbar a:hover {
+nav > a:hover {
     background-color: #333;
     color: white;
-}
-
-.navbar li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.navbar li:last-child {
-    margin-right: 0;
 }
 
 /*
