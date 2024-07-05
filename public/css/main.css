@@ -116,7 +116,7 @@ Clearfix
 }
 .group {
     clear: both;
-    *zoom: 1;
+    zoom: 1;
 }
 
 /*
@@ -137,12 +137,10 @@ Rows
 
 .row {
     padding: 66px 0 44px 30px;
-    margin-top: 10px;
 }
 
 .row-alt {
     padding: 66px 0 4px 30px;
-    margin-top: 10px;
 }
 
 /*
