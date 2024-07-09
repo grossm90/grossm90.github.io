@@ -14,7 +14,8 @@ body
     include includes/header.pug
     section.row
         div.grid
-            h1 #{post.title}
-            h2 #{post.description}
-            p #{post.content}
+            .post
+                h1 #{post.title}
+                p.post-meta Posted on #{post.createdAt.toDateString()}          
+                p.post-content #{post.content}
     include includes/footer.pug

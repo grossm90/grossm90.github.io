@@ -13,9 +13,12 @@ html(lang='en')
         include includes/header.pug
         section.row
             .grid
-                ul
-                    each post in posts
-                        li 
-                            a(href='/post/' + post.id) #{post.title} #{post.createdAt.toDateString()} #{post.createdAt.toLocaleTimeString()}
+                each post in posts
+                    .post-preview
+                        a(href='/post/' + post.id) 
+                            h2.post-title #{post.title}
+                        p.post-meta Posted on #{post.createdAt.toDateString()}
+                        p.post-description #{post.description}
+                        hr
 
 include includes/footer.pug

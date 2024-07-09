@@ -22,6 +22,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+const storePost = require('./middleware/storePost');
+
+app.use('/posts/store', storePost);
+
 app.get('/', (req, res) => {
     res.render('index');
 });
