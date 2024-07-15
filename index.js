@@ -38,8 +38,8 @@ app.get('/projects', (req, res) => {
     res.render('projects');
 });
 
-app.get('/posts', async (req, res) => {
-    const posts = await Post.find({});
+app.get('/posts', async (req, res) => { 
+    const posts = await Post.find().sort({createdAt: -1}).limit(15);
     res.render('blog', {
         posts
     });
