@@ -1,14 +1,9 @@
-<header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar__left">
-            <a href="/"><strong>Home</strong></a>
-        </div>
-        <div class="navbar__right">
-            <a href="/cv">Resum&eacute;</a>
-            <a href="/projects">Projects</a>
-            <a href="/certs">Certifications</a>
-            <a href="/blog">Blog</a>
-            <a href="/notes">Notes</a>
-        </div>
-    </nav>
-</header>
+{{ with site.Menus.main }}
+<nav class="menu">
+    {{ range . }} {{ if $.IsMenuCurrent .Menu . }}
+    <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+    {{ else }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }} {{ end }}
+</nav>
+{{ end }}
