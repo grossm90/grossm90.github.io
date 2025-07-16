@@ -4,18 +4,12 @@
 name = "Mlg"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Simple Theme for My Site"
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
+  name = "Matthew L. Gross"
   homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

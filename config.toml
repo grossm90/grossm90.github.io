@@ -1,4 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Matthew L Gross'
 theme = 'mlg'
+[params]
+    description = "Website for Matthew Gross's CV and Blog"
