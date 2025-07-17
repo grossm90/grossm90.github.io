@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-enableGitInfo: true
+enableGitInfo = true
 title = 'Matthew L Gross'
 theme = 'mlg'
 [params]
