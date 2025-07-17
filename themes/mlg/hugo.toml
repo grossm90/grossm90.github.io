@@ -32,12 +32,6 @@
     pageRef = '/notes'
     weight = 60
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-
 [module]
   [module.hugoVersion]
     extended = false
