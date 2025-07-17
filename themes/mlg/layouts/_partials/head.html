@@ -1,5 +1,28 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
+    site.Title }}{{ end }}
+</title>
+
+<meta name="robots" content="index, follow" />
+<meta
+    name="googlebot"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+<meta
+    name="bingbot"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+
+{{ if .Description }}
+<meta name="description" content="{{ .Description }}" />
+{{ else }}
+<meta name="description" content="{{ site.Params.Description }}" />
+{{ end }}
+
+<link
+    rel="canonical"
+    href="{{ if .Params.canonical }}{{ .Params.canonical }}{{ else }}{{ .Permalink }}{{ end }}"
+/>
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
