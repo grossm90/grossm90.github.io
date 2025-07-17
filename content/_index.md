@@ -7,4 +7,5 @@ Hello, world!
 
 Test
 
+> [!TIP]
 > Another Test

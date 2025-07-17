@@ -1,22 +1,42 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-US'
-title = 'My New Hugo Site'
-
 [menus]
+  [[menus.footer]]
+    name = 'Legal'
+    pageRef = '/legal'
+    weight = 10
+  [[menus.footer]]
+    name = 'Privacy'
+    pageRef = '/privacy'
+    weight = 20
   [[menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10
-
   [[menus.main]]
-    name = 'Posts'
-    pageRef = '/posts'
+    name = 'Résumé'
+    pageRef = '/cv'
     weight = 20
-
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
+    name = 'Projects'
+    pageRef = '/projects'
     weight = 30
+  [[menus.main]]
+    name = 'Certifications'
+    pageRef = '/certs'
+    weight = 40
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 50
+  [[menus.main]]
+    name = 'Notes'
+    pageRef = '/notes'
+    weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
 
 [module]
   [module.hugoVersion]
