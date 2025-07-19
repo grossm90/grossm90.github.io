@@ -1,7 +1,5 @@
-{{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
-{{ end }}
+{{ define "main" }} {{ .Content }}
+<hr class="border" />
+{{ range where site.RegularPages "Section" "blog" }}
+<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+{{ .Summary }} {{ end }} {{ end }}

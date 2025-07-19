@@ -26,6 +26,8 @@ Renders a menu for the given menu ID.
       {{- $attrs = merge $attrs (dict "class" "active nav-link" "aria-current" "page") }}
     {{- else if $page.HasMenuCurrent .Menu .}}
       {{- $attrs = merge $attrs (dict "class" "ancestor nav-link" "aria-current" "true") }}
+    {{- else }}
+      {{- $attrs = merge $attrs (dict "class" "ancestor nav-link") }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}

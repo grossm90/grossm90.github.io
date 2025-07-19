@@ -13,19 +13,19 @@
     weight = 10
   [[menus.main]]
     name = 'Résumé'
-    pageRef = '/'
+    pageRef = '/cv'
     weight = 20
   [[menus.main]]
     name = 'Projects'
-    pageRef = '/'
+    pageRef = '/projects'
     weight = 30
   [[menus.main]]
     name = 'Certifications'
-    pageRef = '/'
+    pageRef = '/certs'
     weight = 40
   [[menus.main]]
     name = 'Notes'
-    pageRef = '/'
+    url = 'https://www.example.com'
     weight = 50
 
 [module]
