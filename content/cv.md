@@ -1,22 +1,35 @@
++++
+title = 'Résumé'
+url = '/cv'
+hideDate = true
++++
+
 ---
-title: 'Resume'
-url: '/cv'
-hideDate: true
----
-
-# Your Name
-
-## Summary
-
-Brief summary about you.
 
 ## Experience
 
--   Job 1 — Details
--   Job 2 — Details
+---
+
+**J.P. Taravella High School:** Teacher CTE - STEM
+
+_2019 - Current_
+
+---
 
 ## Education
 
--   School — Degree
+---
 
-...and so on.
+**Broward College:** B.S. Exceptional Student Education
+
+_2019_
+
+---
+
+## Certifications and Honors
+
+---
+
+**J.P. Taravella Teacher of the Year**
+
+_2023/2024_

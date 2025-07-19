@@ -22,11 +22,11 @@
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Resume</title>
+      <title>Résumé</title>
       <link>//localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/cv/</guid>
-      <description>&lt;h1 id=&#34;your-name&#34;&gt;Your Name&lt;/h1&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;Brief summary about you.&lt;/p&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Job 1 — Details&lt;/li&gt;&#xA;&lt;li&gt;Job 2 — Details&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;School — Degree&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&amp;hellip;and so on.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella High School:&lt;/strong&gt; Teacher CTE - STEM&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019 - Current&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Broward College:&lt;/strong&gt; B.S. Exceptional Student Education&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;certifications-and-honors&#34;&gt;Certifications and Honors&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella Teacher of the Year&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2023/2024&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
