@@ -1,5 +1,17 @@
 {{ define "main" }} {{ .Content }}
 <hr class="border" />
-{{ range where site.RegularPages "Section" "blog" }}
-<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }} {{ end }} {{ end }}
+{{/* Get current year and last 2 years */}} {{ $now := now }} {{ $currentYear :=
+$now.Year }} {{ $years := slice $currentYear (sub $currentYear 1) (sub
+$currentYear 2) }} {{ $posts := where .Site.RegularPages "Section" "blog" }} {{
+range $years }} {{ $year := . }} {{ $yearPosts := where $posts "Date.Year" $year
+}} {{ if gt (len $yearPosts) 0 }}
+<h2>{{ $year }}</h2>
+<ul>
+    {{ range $yearPosts }}
+    <h3>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </h3>
+    <p class="text-body-secondary">{{ .Date.Format "Jan 02" }}</p>
+    {{ .Summary }} {{ end }}
+</ul>
+{{ end }} {{ end }} {{ end }}
