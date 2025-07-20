@@ -4,4 +4,4 @@ draft = false
 hideDate = true
 +++
 
-ITS: JS
+Information Technology Specialist in JavaScript

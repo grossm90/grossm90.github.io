@@ -23,12 +23,11 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2025-07-19T07:36:17-04:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/certs/autocad/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
     <loc>//localhost:1313/certs/</loc>
-    <lastmod>2025-07-19T12:20:28-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/certs/cert1/</loc>
     <lastmod>2025-07-19T12:20:28-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/projects/project1/</loc>

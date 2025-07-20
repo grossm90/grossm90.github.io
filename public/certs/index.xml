@@ -8,11 +8,53 @@
     <language>en-us</language>
     <atom:link href="//localhost:1313/certs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>JavaScript</title>
-      <link>//localhost:1313/certs/cert1/</link>
+      <title>AutoCAD</title>
+      <link>//localhost:1313/certs/autocad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/certs/cert1/</guid>
-      <description>&lt;p&gt;ITS: JS&lt;/p&gt;</description>
+      <guid>//localhost:1313/certs/autocad/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: AutoCAD®&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fusion</title>
+      <link>//localhost:1313/certs/fusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/fusion/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Fusion®&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML and CSS</title>
+      <link>//localhost:1313/certs/html_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html_css/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML and CSS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML5</title>
+      <link>//localhost:1313/certs/html5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html5/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML5 Application Development&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inventor</title>
+      <link>//localhost:1313/certs/inventor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/inventor/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Inventor®&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>//localhost:1313/certs/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/java/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in Java&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>//localhost:1313/certs/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/javascript/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in JavaScript&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
