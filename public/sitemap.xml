@@ -24,19 +24,41 @@
     <lastmod>2025-07-19T07:36:17-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/certs/autocad/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
     <loc>//localhost:1313/certs/</loc>
     <lastmod>2025-07-19T12:20:28-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/project1/</loc>
-    <lastmod>2025-07-19T12:20:28-04:00</lastmod>
+    <loc>//localhost:1313/certs/fusion/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/certs/html_css/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/certs/html5/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/certs/inventor/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/certs/java/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/certs/javascript/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects/lydia/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/projects/</loc>
     <lastmod>2025-07-19T12:20:28-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/cv/</loc>
     <lastmod>2025-07-19T08:13:03-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/projects/ucssg/</loc>
+    <lastmod>2025-07-20T16:36:12-04:00</lastmod>
   </url>
 </urlset>

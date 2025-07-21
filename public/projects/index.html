@@ -67,7 +67,7 @@
       <a class="nav-link" href="/cv/">Résumé</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/projects/">Projects</a>
+      <a aria-current="page" class="active nav-link" href="/projects/">Projects</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/certs/">Certifications</a>
@@ -82,11 +82,36 @@
 </header>
         <main class="container">
 <h1>Projects</h1>
- 
-<h2><a href="/projects/lydia/">Lydia</a></h2>
 
-<h2><a href="/projects/ucssg/">The Ultimate CS Study Guide</a></h2>
- </main>
+
+<div class="container">
+    <div class="row row-cols-3">
+        
+        <div class="card col" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Lydia</h5>
+                <p class="card-text"><p>The Lydia database is&hellip;</p></p>
+                <a href="/projects/lydia/" class="btn btn-primary"
+                    >Lydia</a
+                >
+            </div>
+        </div>
+        
+        <div class="card col" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">The Ultimate CS Study Guide</h5>
+                <p class="card-text"><p>The UCSSG database is&hellip;</p></p>
+                <a href="/projects/ucssg/" class="btn btn-primary"
+                    >The Ultimate CS Study Guide</a
+                >
+            </div>
+        </div>
+        
+    </div>
+</div>
+</main>
         <footer><hr class="border" />
 <div class="container d-flex justify-content-center">
     <p>Copyright 2025. All rights reserved.</p>

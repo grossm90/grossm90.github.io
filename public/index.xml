@@ -29,10 +29,52 @@
       <description>&lt;p&gt;Autodesk Certified User: AutoCAD®&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Lydia</title>
-      <link>//localhost:1313/projects/project1/</link>
+      <title>Fusion</title>
+      <link>//localhost:1313/certs/fusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/project1/</guid>
+      <guid>//localhost:1313/certs/fusion/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Fusion®&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML and CSS</title>
+      <link>//localhost:1313/certs/html_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html_css/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML and CSS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML5</title>
+      <link>//localhost:1313/certs/html5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html5/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML5 Application Development&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inventor</title>
+      <link>//localhost:1313/certs/inventor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/inventor/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Inventor®&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>//localhost:1313/certs/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/java/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in Java&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>//localhost:1313/certs/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/javascript/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in JavaScript&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lydia</title>
+      <link>//localhost:1313/projects/lydia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/lydia/</guid>
       <description>&lt;p&gt;The Lydia database is&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
@@ -41,6 +83,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/cv/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella High School:&lt;/strong&gt; Teacher CTE - STEM&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019 - Current&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Broward College:&lt;/strong&gt; B.S. Exceptional Student Education&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;certifications-and-honors&#34;&gt;Certifications and Honors&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella Teacher of the Year&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2023/2024&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ultimate CS Study Guide</title>
+      <link>//localhost:1313/projects/ucssg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/ucssg/</guid>
+      <description>&lt;p&gt;The UCSSG database is&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
