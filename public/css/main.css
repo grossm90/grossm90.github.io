@@ -11764,4 +11764,8 @@ fieldset:disabled .btn {
         display: none !important;
     }
 }
+
+img {
+    max-width: 100%;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */

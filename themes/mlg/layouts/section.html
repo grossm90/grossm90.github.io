@@ -5,13 +5,18 @@
 <div class="container">
     <div class="row row-cols-3">
         {{ range .Pages }}
-        <div class="card col" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
+        <div class="card col" style="width: 18rem; padding: 0px">
+            <img
+                src="{{ .Params.thumbnail }}"
+                class="card-img-top"
+                alt=" {{ .Title }}"
+                style="height: 180px"
+            />
             <div class="card-body">
                 <h5 class="card-title">
                     <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
                 </h5>
-                <p class="card-text">{{ .Summary }}</p>
+                <p class="card-text">{{ .Summary | plainify }}</p>
             </div>
         </div>
         {{ end }}
