@@ -11768,4 +11768,9 @@ fieldset:disabled .btn {
 img {
     max-width: 100%;
 }
+
+.custom-main {
+    max-width: 650px;
+    width: 100%;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */

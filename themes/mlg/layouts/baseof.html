@@ -9,7 +9,9 @@
     </head>
     <body>
         <header>{{ partial "header.html" . }}</header>
-        <main class="container">{{ block "main" . }}{{ end }}</main>
+        <main class="custom-main mx-auto px-3">
+            {{ block "main" . }}{{ end }}
+        </main>
         <footer>{{ partial "footer.html" . }}</footer>
     </body>
 </html>
