@@ -2,6 +2,7 @@
 title = 'HTML and CSS'
 draft = false
 hideDate = true
+type = 'Information Technology Specialist'
 thumbnail = 'html_css/mlg_cert_its_html_css.png'
 +++
 
