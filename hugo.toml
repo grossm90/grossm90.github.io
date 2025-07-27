@@ -4,5 +4,5 @@ enableGitInfo = true
 title = 'Matthew L Gross'
 theme = 'mlg'
 [params]
-    subtitle = "Teaching | Tech | Gamedev"
+    subtitle = "Teaching | Tech | GameDev"
     description = "Website for Matthew Gross's CV and Blog"
