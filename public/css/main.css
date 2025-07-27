@@ -3727,6 +3727,11 @@ fieldset:disabled .btn {
     pointer-events: none;
     cursor: default;
 }
+
+.nav .nav-item .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    font-weight: bold;
+}
 .nav-tabs {
     --bs-nav-tabs-border-width: var(--bs-border-width);
     --bs-nav-tabs-border-color: var(--bs-border-color);
