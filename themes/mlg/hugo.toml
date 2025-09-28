@@ -1,3 +1,5 @@
+enableGitInfo = true
+
 [menus]
   [[menus.footer]]
     name = 'Legal'

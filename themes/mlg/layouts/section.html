@@ -1,8 +1,8 @@
 {{ define "main" }}
-<h1 class="h1">{{ .Title }}</h1>
+<h1 class="h3">{{ .Title }}</h1>
 {{ .Content }} {{ $grouped := .Pages.GroupByParam "type" }} {{ range $group :=
 $grouped }}
-<h2 class="display-6">{{ $group.Key }}</h2>
+<h2 class="h4">{{ $group.Key }}</h2>
 <div class="container mb-4">
     <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
         {{ range sort $group.Pages "Title" }}
