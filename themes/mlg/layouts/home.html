@@ -7,15 +7,15 @@
 {{ range $years }} {{ $year := . }}
 {{ $yearPosts := where $posts "Date.Year" $year }}
 {{ if gt (len $yearPosts) 0 }}
-<h2 class="text-center h4">{{ $year }}</h2>
+<h3 class="h1 text-center">{{ $year }}</h3>
 <hr class="border" />
-<ul>
+<ul style="padding-left: 0em">
     {{ range $yearPosts }}
-    <h3 class="h5 float-start">
+    <h4 class="h2 float-start">
         <a class="link-underline link-underline-opacity-0" href="{{ .RelPermalink }}">
             {{ .LinkTitle }}
         </a>
-    </h3>
+    </h4>
     <p class="text-body-secondary float-end">{{ .Date.Format "Jan 02" }}</p></br>
     <div class="mt-2">
     {{ .Summary }}
