@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <h2 class="h1">{{ .Title }}</h2>
+
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    {{ if not .Params.hideDate }}
+        <time class="text-body-secondary" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ end }}
+    {{ if .Params.edited }}
+        <p class="fst-italic text-body-secondary">
+            Updated: {{ .Page.Lastmod.Format "Jan 2, 2006 at 3:04pm" }}
+            {{ .Params.editReason }}
+        </p>
+    {{ end }}
+
+    <div class="mt-2">
+        {{ .Content }}
+    </div>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

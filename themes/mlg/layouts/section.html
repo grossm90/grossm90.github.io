@@ -1,0 +1,27 @@
+{{ define "main" }}
+<h2 class="h1">{{ .Title }}</h2>
+{{ .Content }} {{ $grouped := .Pages.GroupByParam "type" }} {{ range $group :=
+$grouped }}
+<h3 class="h2">{{ $group.Key }}</h3>
+<div class="container mb-4">
+    <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+        {{ range sort $group.Pages "Title" }}
+        <div class="col">
+            <div class="card p-0" style="height: 100%">
+                <img
+                    src="{{ .Params.thumbnail }}"
+                    class="card-img-top"
+                    alt=" {{ .Title }}"
+                />
+                <div class="card-body">
+                    <h4 class="h3 card-title">
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    </h4>
+                    <p class="card-text">{{ .Summary | plainify }}</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }} {{ end }}

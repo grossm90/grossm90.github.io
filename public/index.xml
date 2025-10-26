@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew L Gross</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Matthew L Gross</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 1</title>
+      <link>//localhost:1313/blog/post-1/</link>
+      <pubDate>Thu, 09 Jan 2025 09:00:00 -0700</pubDate>
+      <guid>//localhost:1313/blog/post-1/</guid>
+      <description>Test post 1</description>
+    </item>
+    <item>
+      <title>Post 2</title>
+      <link>//localhost:1313/blog/post-2/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>//localhost:1313/blog/post-2/</guid>
+      <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;&#xA;&lt;p&gt;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AutoCAD</title>
+      <link>//localhost:1313/certs/autocad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/autocad/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: AutoCAD®&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_acu_acad.png&#34; alt=&#34;AutoCAD&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fusion</title>
+      <link>//localhost:1313/certs/fusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/fusion/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Fusion®&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_acu_fusion.png&#34; alt=&#34;Fusion&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML and CSS</title>
+      <link>//localhost:1313/certs/html_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html_css/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML and CSS&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_its_html_css.png&#34; alt=&#34;HTML and CSS&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML5</title>
+      <link>//localhost:1313/certs/html5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/html5/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in HTML5 Application Development&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_its_html5.png&#34; alt=&#34;HTML5&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inventor</title>
+      <link>//localhost:1313/certs/inventor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/inventor/</guid>
+      <description>&lt;p&gt;Autodesk Certified User: Inventor®&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_acu_inventor.png&#34; alt=&#34;Inventor&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>//localhost:1313/certs/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/java/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in Java&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_its_java.png&#34; alt=&#34;Java&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>//localhost:1313/certs/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/certs/javascript/</guid>
+      <description>&lt;p&gt;Information Technology Specialist in JavaScript&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;mlg_cert_its_javascript.png&#34; alt=&#34;JavaScript&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lydia</title>
+      <link>//localhost:1313/projects/lydia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/lydia/</guid>
+      <description>&lt;p&gt;The Lydia database is&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Résumé</title>
+      <link>//localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/cv/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella High School:&lt;/strong&gt; Teacher CTE - STEM&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019 - Current&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Broward College:&lt;/strong&gt; B.S. Exceptional Student Education&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2019&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;certifications-and-honors&#34;&gt;Certifications and Honors&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;J.P. Taravella Teacher of the Year&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;2023/2024&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ultimate CS Study Guide</title>
+      <link>//localhost:1313/projects/ucssg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/ucssg/</guid>
+      <description>&lt;p&gt;The UCSSG database is&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
