@@ -1,8 +1,8 @@
 +++
 title = 'Building a Classroom Server: Origins'
 summary = 'The first steps on a long journey to ultimate control of my classroom.'
-date = 2025-09-28T09:10:00
-draft = true
+date = 2025-10-26T10:35:00
+draft = false
 tags = ['Primus', 'Linux', 'server', 'computer-lab']
 +++
 
