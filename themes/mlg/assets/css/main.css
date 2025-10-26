@@ -250,7 +250,7 @@ h2 {
 @media (min-width: 1200px) {
     .h2,
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 }
 .h3,
@@ -260,22 +260,22 @@ h3 {
 @media (min-width: 1200px) {
     .h3,
     h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 .h4,
 h4 {
-    font-size: calc(1.275rem + 0.2vw);
+    font-size: calc(1.175rem + 0.2vw);
 }
 @media (min-width: 1200px) {
     .h4,
     h4 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 .h5,
 h5 {
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 .h6,
 h6 {
