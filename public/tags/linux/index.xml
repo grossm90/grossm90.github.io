@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Matthew L Gross</title>
-    <link>//localhost:1313/blog/</link>
-    <description>Recent content in Blogs on Matthew L Gross</description>
+    <title>Linux on Matthew L Gross</title>
+    <link>//localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Matthew L Gross</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Oct 2025 10:50:49 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Classroom Server: Origins</title>
       <link>//localhost:1313/blog/2025-09-28-0-building-a-classroom-server-0/</link>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html
+    lang="en-us"
+    dir="ltr"
+    data-bs-theme="dark"
+>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Building a Classroom Server: Origins | Matthew L Gross
+</title>
+
+<meta name="robots" content="index, follow" />
+<meta
+    name="googlebot"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+<meta
+    name="bingbot"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+/>
+
+
+<meta name="description" content="Website for Matthew Gross&#39;s CV and Blog" />
+
+
+<link
+    rel="canonical"
+    href="//localhost:1313/blog/2025-09-28-0-building-a-classroom-server-0/"
+/>
+
+    <link rel="stylesheet" href="/css/main.css">
+ 
+      <script src="/js/main.js"></script>
+
+
+    </head>
+    <body>
+        <header><div class="container pt-2">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>
+                <a
+                    href="/"
+                    class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                >
+                    Matthew L Gross
+                </a>
+            </h1>
+        </div>
+        <div class="col-lg-6">
+            <aside class="h1 text-end text-body-secondary" id="subtitle">
+                Teaching | Tech | GameDev
+            </aside>
+        </div>
+    </div>
+</div>
+<hr class="border" />
+
+  <nav>
+    <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cv/">Résumé</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/projects/">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/certs/">Certifications</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.example.com">Notes</a>
+    </li>
+    </ul>
+  </nav>
+
+<hr class="border" />
+</header>
+        <main class="custom-main mx-auto px-3">
+            
+    <h2 class="h1">Building a Classroom Server: Origins</h2>
+
+    
+    
+    
+        <time class="text-body-secondary" datetime="2025-10-26T10:35:00&#43;00:00">October 26, 2025</time>
+    
+    
+
+    <div class="mt-2">
+    <article>
+         
+<blockquote><p>THINK OF IT AS LITTLE TOY BLOCKS
+ON GREAT BIG STEROIDS</p>
+<p>—— Sim City 2000 Ad, 1995</p>
+</blockquote>
+
+<h2 id="the-dream">The Dream</h2>
+<p>At the end of the 2023/24 school year, I was informed that a grant for a new computer lab was approved and that I would be the lucky teacher who would get to call it home. The grant would supply forty computers, two monitors each, articulating stands for said monitors, an 80&quot; touch-screen display, as well as furniture to keep everything off the floor.</p>
+<p>This, of course, was great news as I was in a typical classroom with regular desks, a laptop cart, and a low-definition projector from the early 2000s. A dream room, however, begets a dream networking setup, and my imagination shot into overdrive.</p>
+<p>One specific pain point for CS teachers is managing student workstations in a way that balances access to contemporary software for students while maintaining a secure environment for the school.</p>
+<p>One solution to this pain point is to host a LAN server in the classroom that has no internet or school network access. This gives the teacher ultimate control and flexibility over the workstations while ensuring the school&rsquo;s and students&rsquo; data are protected. The downside, of course, is it&rsquo;s a ton of frick&rsquo;n work. If you&rsquo;re interested in creating something similar for your computer lab, you can click on the &ldquo;Primus&rdquo; tag at the bottom of this post, which is the nickname I&rsquo;ve given to this project.</p>
+<h2 id="the-plan">The Plan</h2>
+<p>The ultimate goal is to,</p>
+<p>Have an Ubuntu server with the following software:</p>
+<ul>
+<li>FreeIPA - for managing accounts</li>
+<li>Veyon - for monitoring student machines and screen-sharing</li>
+<li>Moodle - for hosting assignments and quizzes</li>
+<li>GitLab - for hosting code and teaching students modern versioning workflows</li>
+</ul>
+<p>And forty Linux Mint clients with the following software:</p>
+<ul>
+<li>Visual Studio Code - for writing code</li>
+<li>BlueJ - for planning, debugging, and compiling Java projects</li>
+<li>Processing - for creating visual Java &ldquo;sketches&rdquo;</li>
+<li>PICO-8 <em>†</em> - for developing simple &ldquo;retro&rdquo; games</li>
+<li>Godot - for developing complex &ldquo;modern&rdquo; games</li>
+<li>Blender - for 3D modeling</li>
+<li>Ardour - for making music</li>
+<li>Aseprite <em>†</em> - for making pixel art</li>
+<li>GIMP - for making digital art</li>
+<li>Docker - for running the CS50 Codespace container</li>
+<li>CS50 Codespace - for CS50AP student code</li>
+</ul>
+<p><em>†: This software is not free, but educational licences are available</em></p>
+<h3 id="risks-and-challenges">Risks and Challenges</h3>
+<p>The largest challenge is the time investment, as the server must be configured from scratch. I am not experienced in networking, so even simple things like configuring IP addresses and DNS settings all have to be researched. Student accounts must be created in FreeIPA and given the correct permissions, all with the understanding that a small subset of students are both clever and malicious, and may try to undermine my system. A robust backup system has to be implemented from day one with regular syncs in the case that, whether by accident or on purpose, the server crashes irrecoverably.</p>
+<p>Additionally, because the entire system must never connect to the internet, I have to</p>
+<ol>
+<li>Measure, cut, splice, and run forty Ethernet cables throughout my lab</li>
+<li>Download all of the software off campus and upload it to the server manually</li>
+</ol>
+<p>Number two is particularly challenging, as I do not have a lot of experience with the inner workings of package managers such as apt, so I will have to research how to host a local instance of apt on the server that the clients can then download from.</p>
+<p>The summer is not long enough to set everything up in time before the next school year starts, so a plan for a minimum viable version must be in place.</p>
+<p>Finally, the school district, at any time with no notice, may tell me that I am not allowed to run Linux on the computers. I have secured permission to do what I am doing, but it is worth remembering that it is in the nature of large bureaucratic institutions to revoke permissions like these on a dime. A teacher&rsquo;s classroom does not actually belong to them, as we&rsquo;ve seen in Idaho with the &ldquo;Everyone Is Welcome Here&rdquo; poster incident. A backup plan to teach all of my curriculum through district resources must also be in place.</p>
+<h3 id="the-roadmap">The Roadmap</h3>
+<p>This roadmap is obviously fluid and subject to change, but here are the broad strokes:</p>
+<ol>
+<li>Set the classroom up to be ready on day one of the 2025/26 school year</li>
+<li>Create a Linux Mint image that will suffice until the server is ready</li>
+<li>Mount the network switch and run the cables</li>
+<li>Configure the server and test on a single client</li>
+<li>Roll out with the entire lab</li>
+</ol>
+<p>At the time of writing this, I am in the seemingly bottomless valley between steps two and five. All forty computers are running Linux Mint with VS Code, PICO-8, BlueJ, Processing, and Docker with a CS50 Codespace container, but don&rsquo;t let me skip ahead. How has this roadmap progressed thus far?</p>
+<h2 id="step-one-set-the-classroom-up-for-2025">Step One: Set the Classroom up for 2025</h2>
+<p>Things did not get off to a smooth start. Heading into the summer of 2025, only ten of the forty computers arrived on campus. The furniture had been delivered months ago, but only one quarter of the PCs had arrived, and the 80&quot; display for the front of the classroom was also MIA. I had hoped to spread the load of setting up the room throughout the summer, but this could not happen until the computers arrived.</p>
+<p>Fast forward to Monday, July 28th, 2025, the week before the teacher pre-planning week, and only ten more computers had arrived; half of what was purchased. Either way, I had to get started, so I began unboxing all of the new PCs and monitors and set them up on the left side of the room, then I took half of my old computers and set them up on the right side. The new monitors, beautiful 23&quot; Thinkvisions, needed to be screwed into their bases. They do not clip in like my older monitors did, and thus required an entire day to assemble.</p>
+<h2 id="step-two-create-a-linux-mint-image">Step Two: Create A Linux Mint Image</h2>
+<p>It was now Wednesday, and with two different computer models in my lab, I would have to create two different images because the drivers were not compatible between models. I finished Wednesday evening with an image that would work across my older PCs, saved to a thumb drive using Clonezilla.</p>
+<p>I started on Thursday morning by creating the image for the newer PCs. All goes well and I finished by lunch time, where I am surprised by&hellip; the delivery of the other half of the new PCs. So. After my lunch, I set up the new PCs and started re-imaging them using the thumb drive I set up the day before. I got four done before calling it a day.</p>
+<p>I don&rsquo;t typically like asking others for help, but the situation was dire. I needed the rest of the lab imaged before the weekend, because I had to be in Miami during the pre-planning week, as I was scheduled to teach a Professional Development class. Thankfully, my wonderful girlfriend agreed to help with the tedious task of re-imaging the thirty-six other computers, and we finished just in time. <em>She may or may not have understood how boring re-imaging computers is before agreeing.</em></p>
+<p>The success was bittersweet, however. The 80&quot; display had still not arrived, and the image I had created was a lackluster stopgap to my ultimate goal of a fully featured server. Regardless, the show must go on, so I borrowed another touchscreen display from the Media Center and set my focus on the PD I had to teach after my much-needed weekend.</p>
+<h2 id="step-three-mount-the-network-switch-and-run-the-cables">Step Three: Mount the Network Switch and Run the Cables</h2>
+<p>After a few weeks of running around with a thumb drive to distribute assignments and collect student work, I was really eager to do whatever was in my power to get the server up and running. I purchased an RJ45 splicing tool and cable tester with my own money (thankfully, my school has multiple spools of CAT6+ cable and RJ45 connectors that I&rsquo;m free to use) and hit up YouTube for a tutorial. I messed up my first connector, but otherwise got the hang of it quickly. I then taught a handful of trustworthy students how to create the cables to spread the load.</p>
+<p>The switch is a Ubiquiti 48-port Gigabit network switch. It is rack-mounted and will live in a 2RU wall-mounted rack on the left side of my classroom. As mentioned previously, the cables will be custom cut, then zip-tied in groups that match each row of desks, then anchored to the wall with zip-tie anchors.</p>
+<h2 id="step-four-configure-the-server">Step Four: Configure the Server</h2>
+<p>The server was a Dell PowerEdge 1950 that was donated by a very generous teacher at a neighboring school. I say <em>was</em>, because this server was manufactured in 2002. It has dual 1.6 GHz, 64-bit Xeon processors, is capable of supporting 32 GB of RAM (albeit DDR2), and has two drive bays that support SATA SSDs. These specs are <em>probably</em> more than capable of handling what I need from it, but, being the tech nerd that I am, FOMO set in quickly. The 1950 are <em>very</em> large and <em>very</em> loud. The final straw hit the camel&rsquo;s back when it refused to load the GRUB screen for the latest Ubuntu server version (24.04.3). It&rsquo;s not a total loss for the PowerEdge, though. It will serve as a game server for my after-school E-Sports club.</p>
+<p>On Rosh Hashanah, September 23rd, I used my day off to call AVA Direct, and the <em>super</em> helpful representative set me up with something more contemporary.</p>
+<p>This mostly brings us to the present day. When the new server arrives, I&rsquo;ll draft my next post with the specs, my first attempts at getting FreeIPA configured, and next steps.</p>
+
+    </article>
+    </div>
+    
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/primus/">Primus</a></li>
+        <li><a href="/tags/linux/">Linux</a></li>
+        <li><a href="/tags/server/">Server</a></li>
+        <li><a href="/tags/computer-lab/">Computer-Lab</a></li>
+    </ul>
+  </div>
+
+
+        </main>
+        <footer><hr class="border" />
+<div class="container d-flex justify-content-center">
+    <p>Copyright 2025. All rights reserved.</p>
+</div>
+</footer>
+    </body>
+</html>

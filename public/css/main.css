@@ -229,7 +229,7 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.2;
     color: var(--bs-heading-color);
 }
@@ -250,7 +250,7 @@ h2 {
 @media (min-width: 1200px) {
     .h2,
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 }
 .h3,
@@ -260,22 +260,22 @@ h3 {
 @media (min-width: 1200px) {
     .h3,
     h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 .h4,
 h4 {
-    font-size: calc(1.275rem + 0.2vw);
+    font-size: calc(1.175rem + 0.2vw);
 }
 @media (min-width: 1200px) {
     .h4,
     h4 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 .h5,
 h5 {
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 .h6,
 h6 {
@@ -637,9 +637,11 @@ progress {
     font-size: 0.875em;
     text-transform: uppercase;
 }
-.blockquote {
+blockquote, .blockquote {
     margin-bottom: 1rem;
     font-size: 1.25rem;
+    padding-left: 1rem;
+    border-left: 1px solid #DFE1E4
 }
 .blockquote > :last-child {
     margin-bottom: 0;
@@ -11777,5 +11779,24 @@ img {
 .custom-main {
     max-width: 650px;
     width: 100%;
+}
+
+.post-list li+li {
+  padding-top:20px;
+  border-top:1px solid #DFE1E4
+}
+
+.post-list>li {
+  margin-bottom:30px;
+  padding:0;
+  text-indent:0;
+}
+
+li.no-bullet {
+  list-style-type: none
+}
+
+article p {
+  line-height: 33px
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
