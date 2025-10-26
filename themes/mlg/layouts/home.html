@@ -9,8 +9,9 @@
 {{ if gt (len $yearPosts) 0 }}
 <h3 class="h1 text-center">{{ $year }}</h3>
 <hr class="border" />
-<ul style="padding-left: 0em">
+<ul class="post-list" style="padding-left: 0em">
     {{ range $yearPosts }}
+    <li class="no-bullet">
     <h4 class="h2 float-start">
         <a class="link-underline link-underline-opacity-0" href="{{ .RelPermalink }}">
             {{ .LinkTitle }}
@@ -20,7 +21,7 @@
     <div class="mt-2">
     {{ .Summary }}
     </div>
-
+    </li>
     {{ end }}
 </ul>
 {{ end }} {{ end }} {{ end }}
